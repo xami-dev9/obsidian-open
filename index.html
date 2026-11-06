@@ -1,0 +1,9 @@
+<!doctype html><html lang="th"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>เปิดใน Obsidian</title>
+<style>body{font-family:-apple-system,sans-serif;display:grid;place-items:center;min-height:100vh;margin:0;background:#1e1e2e;color:#eee;text-align:center}a{display:inline-block;margin-top:16px;padding:16px 28px;background:#7c3aed;color:#fff;border-radius:12px;text-decoration:none;font-size:20px}small{display:block;margin-top:14px;opacity:.6;word-break:break-all;padding:0 16px}</style></head>
+<body><div><div id="t">กำลังเปิด Obsidian…</div><a id="b" href="#">📓 เปิดโน้ตใน Obsidian</a><small id="p"></small></div>
+<script>
+var q=new URLSearchParams(location.search),f=q.get("f")||"",v=q.get("v")||"homemac";
+var u="obsidian://open?vault="+encodeURIComponent(v)+"&file="+encodeURIComponent(f);
+document.getElementById("b").href=u;document.getElementById("p").textContent=f;
+if(f){setTimeout(function(){location.href=u},300)}else{document.getElementById("t").textContent="ไม่มีชื่อไฟล์"}
+</script></body></html>
